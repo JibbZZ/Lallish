@@ -2,7 +2,9 @@
 {
     using Dapper;
     using MySqlConnector;
-
+    using System;
+    using System.Drawing;
+    using Console = Colorful.Console;
 
     public class Videotek
     {
@@ -34,11 +36,14 @@
         private static void Main(string[] args)
         {
 
-            Database Data = new Database();
+            Console.Title = "Login";
+            MainMenu.WriteLogo();
+            Console.WriteLine("Welcome", Color.DarkViolet);
+            Console.ReadKey(true);
+            MainMenu.Menu();
 
             {
-                Data.ShowUsers();
-                Data.ShowMovies();
+                
             }
         }
     }
