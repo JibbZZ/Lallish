@@ -13,15 +13,10 @@
         public int phoneNumber { get; set; }
         public string city { get; set; }
         public int postalCode { get; set; }
-
         public string title { get; set; }
-
         public int Year { get; set; }
-
         public int minutes { get; set; }
-
         public int serialNumber { get; set; }
-
         public int price { get; set; }
         public string director { get; set; }
 
@@ -32,27 +27,19 @@
             return $"{id} {name}";
         }
 
-
     }
-
     internal class Program
     {
-
-
-
 
         private static void Main(string[] args)
         {
 
             Database Data = new Database();
 
-
             {
                 Data.ShowUsers();
                 Data.ShowMovies();
             }
-
-
         }
     }
 
